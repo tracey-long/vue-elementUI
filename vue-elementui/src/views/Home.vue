@@ -1,15 +1,10 @@
 <template>
   <div class="home">
-    <div class="demo-image__preview">
-      <el-image
-        style="width: 100px; height: 100px"
-        :src="url"
-        :preview-src-list="srcList"
-      >
-      </el-image>
-    </div>
-    <!-- <hello-world></hello-world> -->
-    <el-button type="text">el-button</el-button>
+    <t-el-image
+      style="width: 100px; height: 100px"
+      :src="url"
+      :preview-src-list="srcList"
+    ></t-el-image>
   </div>
 </template>
 

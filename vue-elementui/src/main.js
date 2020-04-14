@@ -2,13 +2,15 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-// import { ElImage } from "element-ui-image";
-import Element from "element-ui-image";
-import "element-ui-image/lib/theme-chalk/index.css";
+
+import ElementUi from "element-ui";
+Vue.use(ElementUi);
+
+import { Image } from "element-ui-images";
+import "element-ui-images/lib/theme-chalk/index.css";
+Vue.use(Image);
 
 Vue.config.productionTip = false;
-Vue.use(Element);
-// Vue.use(ElImage);
 
 new Vue({
   router,
